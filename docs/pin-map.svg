@@ -24,8 +24,8 @@
     </style>
   </defs>
   <rect width="1200" height="720" rx="28" fill="url(#bg)"/>
-  <text x="58" y="70" fill="#f1f5fb" font-size="31" font-weight="750">RingosRemote · ESP32-S3 SuperMini</text>
-  <text x="58" y="102" class="muted" font-size="17">Logical GPIO map · controller inputs and on-board status LED</text>
+  <text x="58" y="70" fill="#f1f5fb" font-size="31" font-weight="750">RingosRemote - ESP32-S3 SuperMini</text>
+  <text x="58" y="102" class="muted" font-size="17">Logical GPIO map - controller inputs and on-board status LED</text>
 
   <g filter="url(#shadow)">
     <rect x="472" y="145" width="256" height="475" rx="30" fill="url(#board)" stroke="#58a991" stroke-width="2"/>
@@ -44,8 +44,8 @@
   <g>
     <rect x="56" y="171" width="310" height="112" rx="18" class="card"/>
     <text x="82" y="207" class="label">Rotary encoder</text>
-    <text x="82" y="237" class="small">A / B → volume control</text>
-    <text x="82" y="262" class="small">Push switch → mute</text>
+    <text x="82" y="237" class="small">A / B: volume control</text>
+    <text x="82" y="262" class="small">Push switch: mute</text>
     <path d="M366 220 H410 V238 H472" class="trace" stroke="#67b8ff"/>
     <path d="M366 248 H426 V278 H472" class="trace" stroke="#a78bfa"/>
     <path d="M366 272 H442 V318 H472" class="trace" stroke="#ffc46b"/>
@@ -54,13 +54,13 @@
     <circle cx="472" cy="318" r="5" fill="#ffc46b"/>
     <text x="423" y="231" text-anchor="end" class="pin">GPIO 12 · A</text>
     <text x="439" y="271" text-anchor="end" class="pin">GPIO 11 · B</text>
-    <text x="455" y="311" text-anchor="end" class="pin">GPIO 13 · SW</text>
+    <text x="455" y="311" text-anchor="end" class="pin">GPIO 13 - SW</text>
   </g>
 
   <g>
     <rect x="834" y="171" width="310" height="112" rx="18" class="card"/>
     <text x="860" y="207" class="label">Three-button ladder</text>
-    <text x="860" y="237" class="small">Previous · Play/Pause · Next</text>
+    <text x="860" y="237" class="small">Previous / Play-Pause / Next</text>
     <text x="860" y="262" class="small">Shared analog input</text>
     <path d="M728 350 H780 V220 H834" class="trace" stroke="#f472b6"/>
     <circle cx="728" cy="350" r="5" fill="#f472b6"/>
@@ -73,7 +73,7 @@
     <text x="82" y="426" class="small">Input arms only after HID is ready</text>
     <text x="82" y="451" class="small">Reconnect gestures are discarded</text>
     <text x="82" y="486" fill="#c5d2e2" font-size="13">Single-button ADC windows (12-bit):</text>
-    <text x="82" y="509" fill="#c5d2e2" font-size="13">600–810 · 1400–1620 · 2200–2380</text>
+    <text x="82" y="509" fill="#c5d2e2" font-size="13">600-810 / 1400-1620 / 2200-2380</text>
   </g>
 
   <g>
@@ -81,7 +81,7 @@
     <text x="860" y="394" class="label">Status LED</text>
     <text x="860" y="426" class="small">Red: disconnected</text>
     <text x="860" y="451" class="small">Blinking green: advertising</text>
-    <text x="860" y="476" class="small">Amber: connecting · Green: HID ready</text>
+    <text x="860" y="476" class="small">Amber: connecting / Green: HID ready</text>
     <text x="860" y="509" fill="#c5d2e2" font-size="13">Built in; GPIO 48</text>
   </g>
 

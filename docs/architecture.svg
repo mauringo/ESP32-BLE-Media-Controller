@@ -57,15 +57,16 @@
   </g>
 
   <g>
-    <rect x="339" y="354" width="378" height="72" rx="16" fill="#1d2a24" stroke="#426f53" stroke-width="1.5"/>
-    <text x="365" y="384" fill="#daf1df" font-size="16" font-weight="700">Idle timeout → light sleep</text>
+    <rect x="339" y="350" width="378" height="82" rx="16" fill="#1d2a24" stroke="#426f53" stroke-width="1.5"/>
+    <text x="365" y="378" fill="#daf1df" font-size="16" font-weight="700">Idle timeout: light sleep</text>
     <text x="365" y="408" fill="#adc6b1" font-size="14">Encoder GPIO wake · button ladder polled every 50 ms</text>
-    <path d="M457 299 V331 Q457 354 480 354" fill="none" stroke="#80c992" stroke-width="2.5" stroke-dasharray="6 6"/>
+    <path d="M457 299 V331 Q457 350 480 350" fill="none" stroke="#80c992" stroke-width="2.5" stroke-dasharray="6 6"/>
   </g>
   <g>
-    <rect x="754" y="354" width="396" height="72" rx="16" fill="#202438" stroke="#555b86" stroke-width="1.5"/>
-    <text x="780" y="384" fill="#e3e2fa" font-size="16" font-weight="700">Status LED · GPIO 48</text>
-    <text x="780" y="408" fill="#bbb9d4" font-size="14">Red disconnected · blink green advertising · amber connecting · green ready</text>
-    <path d="M763 299 V330 Q763 354 785 354" fill="none" stroke="#a7a0e8" stroke-width="2.5" stroke-dasharray="6 6"/>
+    <rect x="754" y="350" width="396" height="82" rx="16" fill="#202438" stroke="#555b86" stroke-width="1.5"/>
+    <text x="780" y="378" fill="#e3e2fa" font-size="16" font-weight="700">Status LED - GPIO 48</text>
+    <text x="780" y="402" fill="#bbb9d4" font-size="14">Red: disconnected / blinking green: advertising</text>
+    <text x="780" y="420" fill="#bbb9d4" font-size="14">Amber: connecting / green: HID ready</text>
+    <path d="M763 299 V330 Q763 350 785 350" fill="none" stroke="#a7a0e8" stroke-width="2.5" stroke-dasharray="6 6"/>
   </g>
 </svg>

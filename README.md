@@ -9,12 +9,23 @@ or use the three-button analog ladder for previous, play/pause, and next.
 The firmware uses BLE HID through NimBLE, waits for a stable HID session before
 accepting input, and can enter light sleep after a configurable idle period.
 
-![Pin-level input map](docs/pin-map.svg)
+## Diagrams
 
-> This is a firmware-oriented pin map, not a component-level circuit schematic.
-> The resistor values and exact topology of the analog button ladder are not
-> available in the project notes; see [Wiring](docs/wiring.md) before building
-> the hardware.
+### GPIO and controls
+
+![ESP32-S3 pin map for the RingosRemote controller](docs/pin-map.png)
+
+[Open the SVG version](docs/pin-map.svg) · [Wiring notes](docs/wiring.md)
+
+### Firmware architecture
+
+![RingosRemote firmware architecture diagram](docs/architecture.png)
+
+[Open the SVG version](docs/architecture.svg)
+
+> The pin map shows logical signals, not a component-level circuit schematic.
+> Button-ladder resistor values and exact topology are not documented; do not
+> infer them from the ADC readings.
 
 ## Features
 
@@ -157,8 +168,7 @@ docs/                     Wiring notes, diagrams, and test summary
 ESP32-BLE-Keyboard-master/ Local BLE keyboard library used by PlatformIO
 ```
 
-The [architecture diagram](docs/architecture.svg) shows the input, firmware,
-and BLE HID flow.
+The source SVGs for both diagrams are included alongside their PNG previews.
 
 ## Tests
 
