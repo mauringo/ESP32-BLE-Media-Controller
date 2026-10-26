@@ -1,0 +1,14 @@
+{
+  "name": "ESP32 BLE Keyboard",
+  "version": "0.3.2",
+  "description": "Local ESP32 BLE Keyboard adapted to NimBLE-Arduino 2.x",
+  "frameworks": "arduino",
+  "platforms": "espressif32",
+  "build": {
+    "srcDir": ".",
+    "srcFilter": ["+<BleKeyboard.cpp>"]
+  },
+  "dependencies": {
+    "h2zero/NimBLE-Arduino": "2.5.1"
+  }
+}

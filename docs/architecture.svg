@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">RingosRemote firmware architecture</title>
+  <desc id="desc">Inputs feed remote control and activity logic, which arms media key reports only after the BLE HID session is ready. The ESP32 advertises to a host and enters light sleep when idle.</desc>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1">
+      <stop offset="0" stop-color="#101a2a"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <style>
+      text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .box { fill: #172338; stroke: #354965; stroke-width: 1.5; }
+      .title { fill: #eef4fc; font-size: 17px; font-weight: 700; }
+      .body { fill: #acb9cc; font-size: 14px; }
+      .arrow { fill: none; stroke: #78aefb; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#78aefb"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="470" rx="28" fill="url(#bg)"/>
+  <text x="52" y="66" fill="#f1f5fb" font-size="30" font-weight="750">Firmware architecture</text>
+  <text x="52" y="96" fill="#a7b4c7" font-size="16">Input processing, BLE HID readiness, activity tracking, and low-power behavior</text>
+
+  <g>
+    <rect x="50" y="155" width="220" height="144" rx="18" class="box"/>
+    <text x="76" y="190" class="title">Physical controls</text>
+    <text x="76" y="222" class="body">Rotary encoder A/B</text>
+    <text x="76" y="246" class="body">Encoder push switch</text>
+    <text x="76" y="270" class="body">Analog button ladder</text>
+  </g>
+  <path d="M270 226 H324" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <g>
+    <rect x="338" y="155" width="238" height="144" rx="18" class="box"/>
+    <text x="364" y="190" class="title">Input &amp; activity</text>
+    <text x="364" y="222" class="body">Debounce / decode inputs</text>
+    <text x="364" y="246" class="body">Track activity and holds</text>
+    <text x="364" y="270" class="body">Pairing + ADC calibration</text>
+  </g>
+  <path d="M576 226 H630" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <g>
+    <rect x="644" y="155" width="238" height="144" rx="18" fill="#1d3046" stroke="#5685b8" stroke-width="2"/>
+    <text x="670" y="190" class="title">HID readiness gate</text>
+    <text x="670" y="222" class="body">Encrypted link + subscriptions</text>
+    <text x="670" y="246" class="body">Wait for quiet, released inputs</text>
+    <text x="670" y="270" class="body">Drop events while not ready</text>
+  </g>
+  <path d="M882 226 H936" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <g>
+    <rect x="950" y="155" width="200" height="144" rx="18" class="box"/>
+    <text x="976" y="190" class="title">BLE HID host</text>
+    <text x="976" y="222" class="body">Mac media controls</text>
+    <text x="976" y="246" class="body">Volume · mute</text>
+    <text x="976" y="270" class="body">Previous · play · next</text>
+  </g>
+
+  <g>
+    <rect x="339" y="354" width="378" height="72" rx="16" fill="#1d2a24" stroke="#426f53" stroke-width="1.5"/>
+    <text x="365" y="384" fill="#daf1df" font-size="16" font-weight="700">Idle timeout → light sleep</text>
+    <text x="365" y="408" fill="#adc6b1" font-size="14">Encoder GPIO wake · button ladder polled every 50 ms</text>
+    <path d="M457 299 V331 Q457 354 480 354" fill="none" stroke="#80c992" stroke-width="2.5" stroke-dasharray="6 6"/>
+  </g>
+  <g>
+    <rect x="754" y="354" width="396" height="72" rx="16" fill="#202438" stroke="#555b86" stroke-width="1.5"/>
+    <text x="780" y="384" fill="#e3e2fa" font-size="16" font-weight="700">Status LED · GPIO 48</text>
+    <text x="780" y="408" fill="#bbb9d4" font-size="14">Red disconnected · blink green advertising · amber connecting · green ready</text>
+    <path d="M763 299 V330 Q763 354 785 354" fill="none" stroke="#a7a0e8" stroke-width="2.5" stroke-dasharray="6 6"/>
+  </g>
+</svg>

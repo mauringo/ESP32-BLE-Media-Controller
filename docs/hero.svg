@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">RingosRemote BLE media controller illustration</title>
+  <desc id="desc">Original vector illustration of a compact rotary media remote beside Bluetooth audio controls. This is concept art, not a photograph or exact enclosure design.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop offset="0" stop-color="#111b2d"/>
+      <stop offset=".58" stop-color="#172640"/>
+      <stop offset="1" stop-color="#211f42"/>
+    </linearGradient>
+    <linearGradient id="device" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#303d54"/>
+      <stop offset=".48" stop-color="#202a3b"/>
+      <stop offset="1" stop-color="#121a28"/>
+    </linearGradient>
+    <linearGradient id="knob" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dce7f3"/>
+      <stop offset=".45" stop-color="#8497ac"/>
+      <stop offset="1" stop-color="#44556a"/>
+    </linearGradient>
+    <linearGradient id="accent" x2="1" y2="1">
+      <stop offset="0" stop-color="#6ee7c2"/>
+      <stop offset="1" stop-color="#61a8ff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#050912" flood-opacity=".6"/>
+    </filter>
+    <style>
+      text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+    </style>
+  </defs>
+  <rect width="1200" height="430" rx="26" fill="url(#background)"/>
+  <circle cx="942" cy="191" r="148" fill="#547ef9" opacity=".22" filter="url(#glow)"/>
+  <circle cx="1001" cy="232" r="117" fill="#32d8b1" opacity=".14" filter="url(#glow)"/>
+  <path d="M0 342 C220 286 360 414 590 352 S962 298 1200 356 V430 H0Z" fill="#0d1422" opacity=".62"/>
+
+  <g transform="translate(76 86)">
+    <rect x="0" y="0" width="545" height="258" rx="24" fill="#1b2940" stroke="#384a67"/>
+    <rect x="24" y="24" width="497" height="210" rx="17" fill="#121c2d" stroke="#26374f"/>
+    <rect x="43" y="44" width="133" height="20" rx="10" fill="#20334b"/>
+    <circle cx="55" cy="54" r="4" fill="#65ddb1"/>
+    <text x="70" y="59" fill="#8da4c0" font-size="10" font-weight="700" letter-spacing="1.8">RINGOSREMOTE</text>
+    <text x="43" y="111" fill="#eff5fc" font-size="27" font-weight="760">A little control.</text>
+    <text x="43" y="145" fill="#eff5fc" font-size="27" font-weight="760">A smoother soundtrack.</text>
+    <text x="44" y="180" fill="#9eafc5" font-size="14">ESP32-S3 · Bluetooth LE · Media HID</text>
+    <g transform="translate(45 202)" fill="none" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round">
+      <path d="M0 10 h7 l5 -7 7 14 6 -12 6 10 5 -5 h8"/>
+    </g>
+    <text x="100" y="217" fill="#a9bdd3" font-size="12">volume</text>
+    <text x="156" y="217" fill="#a9bdd3" font-size="12">playback</text>
+    <text x="231" y="217" fill="#a9bdd3" font-size="12">reconnect-ready</text>
+  </g>
+
+  <g transform="translate(753 52) rotate(8 166 160)" filter="url(#shadow)">
+    <rect x="0" y="0" width="316" height="330" rx="54" fill="url(#device)" stroke="#788ba4" stroke-width="2"/>
+    <rect x="13" y="13" width="290" height="304" rx="43" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+    <circle cx="158" cy="110" r="72" fill="#151e2b" stroke="#4e6076" stroke-width="3"/>
+    <circle cx="158" cy="110" r="56" fill="url(#knob)" stroke="#d9e5f3" stroke-opacity=".6" stroke-width="1.5"/>
+    <circle cx="158" cy="110" r="40" fill="#8b9bb0" opacity=".28"/>
+    <circle cx="158" cy="110" r="8" fill="#314258" opacity=".8"/>
+    <path d="M122 70 A58 58 0 0 1 181 53" fill="none" stroke="#79e0c0" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="211" cy="65" r="4" fill="#e7f1fd"/>
+    <g transform="translate(49 224)">
+      <circle cx="31" cy="31" r="23" fill="#27364c" stroke="#526680"/>
+      <circle cx="111" cy="31" r="23" fill="#27364c" stroke="#526680"/>
+      <circle cx="191" cy="31" r="23" fill="#27364c" stroke="#526680"/>
+      <path d="M34 31 l-9 -7 v14 z M25 31 h14" fill="none" stroke="#c6d4e4" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M103 22 v18 l14 -9 z" fill="#c6d4e4"/>
+      <path d="M188 22 l9 9 -9 9 M197 31 h-14" fill="none" stroke="#c6d4e4" stroke-width="2" stroke-linejoin="round"/>
+    </g>
+    <circle cx="158" cy="296" r="4" fill="#6ee7c2"/>
+  </g>
+
+  <g transform="translate(1068 103)" fill="none" stroke="#9dc2ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".84">
+    <path d="M12 0 v47 l18 -14 -18 -14 M12 24 l18 14 -18 14"/>
+    <path d="M-2 11 c-7 8 -7 18 0 26 M-12 3 c-12 13 -12 30 0 43" opacity=".48"/>
+  </g>
+  <text x="1096" y="124" fill="#b4c7e6" font-size="11" font-weight="650" letter-spacing="1">BLE</text>
+  <text x="76" y="392" fill="#8092ac" font-size="12">Concept illustration · not a photograph or dimensioned hardware design</text>
+</svg>
